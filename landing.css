@@ -11,16 +11,23 @@ body {
   font-family: 'Arial', sans-serif;
   font-weight: 700;
   flex-direction: column;
-  background-color: rgb(249, 246, 242);
+  background: url('background.jpg') center center fixed;
 }
 
 .container {
-  width: 480px;
-  background-color: #007bff; /* Updated color to match your theme */
+  max-width: 800px;
+  margin: 20px auto;
   padding: 20px;
+  background: linear-gradient(
+    to bottom,
+    #800000,
+    #ddcbcb
+  ); /* Use the same gradient as the header */
+  color: #ffffff; /* Set text color to white */
   box-sizing: border-box;
-  border-radius: 12px;
+  border-radius: 5px; /* Set border-radius to match the header */
   text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .container img {
@@ -60,11 +67,42 @@ body {
   padding: 10px;
   box-sizing: border-box;
   border-radius: 20px;
-  background-color: #dc3545; /* Updated to a red color similar to your theme */
+  background-color: #800000; /* Updated to a red color similar to your theme */
   color: #fff;
   cursor: pointer;
 }
 
 .form button:hover {
-  background-color: #c82333; /* Darker red on hover */
+  background-color: #800000; /* Darker red on hover */
+}
+
+header {
+  background: linear-gradient(to bottom, #800000, #ddcbcb);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.cta-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #800000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
 }
